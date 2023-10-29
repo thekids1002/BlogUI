@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body class="m-lg-5" style="background-color: #DEE3FF;">
@@ -31,15 +32,23 @@
         </div>
         <nav class="bg-white d-sm-inline-flex  d-md-flex justify-content-sm-between align-items-center"
             style="padding: 10px; width: 100%;">
-            <div style="padding: 10px; justify-content: center; align-items: center;text-align: center;">
+            <div class="d-none d-sm-block"
+                style="padding: 10px; justify-content: center; align-items: center; text-align: center;">
                 <img style="width: 130px;"
                     src="https://demo.rivaxstudio.com/raveen/personal/wp-content/uploads/2023/06/logo.svg" alt="raveen"
                     width="240ox" height="70px">
             </div>
+
             <div style="padding: 10px;">
                 <nav class="navbar navbar-expand-sm navbar-light">
                     <div class="container-fluid align-items-center">
-                        <div></div>
+                        <div class="d-block d-sm-none"
+                            style="   justify-content: center; align-items: center; text-align: center;">
+                            <img style="width: 130px;"
+                                src="https://demo.rivaxstudio.com/raveen/personal/wp-content/uploads/2023/06/logo.svg"
+                                alt="raveen" width="240ox" height="70px">
+                        </div>
+
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -54,27 +63,24 @@
                                     <a class="nav-link" href="#">FUTURE</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#">TRAVEL</a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">Hello</a></li>
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        TRAVEL
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
                                         <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
                                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                        data-bs-toggle="" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         CONTACT
                                     </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                         <li><a class="dropdown-item" href="#">Action</a></li>
                                         <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
                                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                                     </ul>
                                 </li>
@@ -97,13 +103,15 @@
                 </ul>
             </div>
         </nav>
+
+
     </header>
 
-    <main class="bg-white">
-        <div style="padding: 10px;">
+    <main class="bg-white" style="padding: 20px;">
+        <div>
             <div class="horizontal-line"></div>
         </div>
-        <div class="gap-4" style="padding: 50px 0px 70px;">
+        <div class="d-flex gap-4" style="padding: 50px 0px 70px; flex-direction: column;">
             <div style="width: 100%; display: flex; justify-content: center;">
                 <div style="width: 220px;">
                     <img height="300" width="300" sizes="(max-width: 300px) 100vw, 300px"
@@ -122,7 +130,7 @@
             <div class="d-flex text-center justify-content-center align-items-center text-danger"
                 style="font-size: 16px; height: 72px;">
                 <span>
-                    <h1 style="padding: 0; margin: 0;">
+                    <h1 style="padding: 0; margin: 0;" id="dynamicText">
                         Social Blogger
                     </h1>
                 </span>
@@ -156,9 +164,289 @@
                 </ul>
             </div>
             <div class="d-flex text-center justify-content-center align-items-center">
-                <button type="button" class="rounded-5 btn btn-light btn-outline-primary px-5 py-3"> <span class="">About me</span></button>
+                <button type="button" class="rounded-5 btn btn-light btn-outline-primary px-5 py-3"> <span
+                        class="">About me</span></button>
             </div>
         </div>
+
+
+        <div class="row">
+
+            <div class="col-md-4 mx-auto mb-4">
+                <div class="d-flex justify-content-center align-items-center text-start ">
+                    <div class="card p-4"  style=" border-radius: 15px;">
+                        <img loading="lazy" width="386px" height="278px"
+                            src="https://demo.rivaxstudio.com/raveen/personal/wp-content/uploads/2023/06/bhavya-pareek-HVB-XhdWOWo-unsplash-550x400.jpg"
+                            class="card-img-top attachment-rivax-small size-rivax-small wp-post-image rounded-4 rounded"
+                            alt="" decoding="async"
+                            title="Taking Control Of Your Daily Life Is Easy When You Know How!">
+                        <div class="p-2">
+                            <div class="card-body">
+                                <a href="" class="text-decoration-none">
+                                    <h3 class="card-title">Taking Control Of Your Daily Life Is Easy When You Know How!
+                                    </h3>
+                                </a>
+                                <div class="d-flex align-items-center">
+                                    <div class="author-image">
+                                        <img decoding="async" class="avatar avatar-60 photo rounded-circle p-2"
+                                            src="https://demo.rivaxstudio.com/raveen/personal/wp-content/uploads/2023/09/User-min-150x150.jpg"
+                                            alt="Sophia Redmond" loading="lazy" width="60" height="60">
+                                    </div>
+                                    <div class=""><span class=""><i>By <b>Sophia Redmond</b></i>
+                                        </span></div>
+                                    &nbsp&nbsp
+                                    <div class="">
+                                        <span class="">
+                                            <i style="font-size: 5px;" class="fa-solid fa-circle"></i>
+                                        </span>
+                                    </div>
+                                    &nbsp&nbsp
+                                    <div><span><i>June 6, 2023</i>
+                                        </span></div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore...</span>
+
+                            </div>
+                            <div class="card-body mt-3">
+                                <button class="rounded rounded-4 px-4 py-2 btn btn-outline-primary">See more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mx-auto mb-4">
+                <div class="d-flex justify-content-center align-items-center text-start ">
+                    <div class="card p-4"  style=" border-radius: 15px;">
+                        <img loading="lazy" width="386px" height="278px"
+                            src="https://demo.rivaxstudio.com/raveen/personal/wp-content/uploads/2023/06/bhavya-pareek-HVB-XhdWOWo-unsplash-550x400.jpg"
+                            class="card-img-top attachment-rivax-small size-rivax-small wp-post-image rounded-4 rounded"
+                            alt="" decoding="async"
+                            title="Taking Control Of Your Daily Life Is Easy When You Know How!">
+                        <div class="p-2">
+                            <div class="card-body">
+                                <a href="" class="text-decoration-none">
+                                    <h3 class="card-title">Taking Control Of Your Daily Life Is Easy When You Know How!
+                                    </h3>
+                                </a>
+                                <div class="d-flex align-items-center">
+                                    <div class="author-image">
+                                        <img decoding="async" class="avatar avatar-60 photo rounded-circle p-2"
+                                            src="https://demo.rivaxstudio.com/raveen/personal/wp-content/uploads/2023/09/User-min-150x150.jpg"
+                                            alt="Sophia Redmond" loading="lazy" width="60" height="60">
+                                    </div>
+                                    <div class=""><span class=""><i>By <b>Sophia Redmond</b></i>
+                                        </span></div>
+                                    &nbsp&nbsp
+                                    <div class="">
+                                        <span class="">
+                                            <i style="font-size: 5px;" class="fa-solid fa-circle"></i>
+                                        </span>
+                                    </div>
+                                    &nbsp&nbsp
+                                    <div><span><i>June 6, 2023</i>
+                                        </span></div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore...</span>
+
+                            </div>
+                            <div class="card-body mt-3">
+                                <button class="rounded rounded-4 px-4 py-2 btn btn-outline-primary">See more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mx-auto mb-4">
+                <div class="d-flex justify-content-center align-items-center text-start ">
+                    <div class="card p-4"  style=" border-radius: 15px;">
+                        <img loading="lazy" width="386px" height="278px"
+                            src="https://demo.rivaxstudio.com/raveen/personal/wp-content/uploads/2023/06/bhavya-pareek-HVB-XhdWOWo-unsplash-550x400.jpg"
+                            class="card-img-top attachment-rivax-small size-rivax-small wp-post-image rounded-4 rounded"
+                            alt="" decoding="async"
+                            title="Taking Control Of Your Daily Life Is Easy When You Know How!">
+                        <div class="p-2">
+                            <div class="card-body">
+                                <a href="" class="text-decoration-none">
+                                    <h3 class="card-title">Taking Control Of Your Daily Life Is Easy When You Know How!
+                                    </h3>
+                                </a>
+                                <div class="d-flex align-items-center">
+                                    <div class="author-image">
+                                        <img decoding="async" class="avatar avatar-60 photo rounded-circle p-2"
+                                            src="https://demo.rivaxstudio.com/raveen/personal/wp-content/uploads/2023/09/User-min-150x150.jpg"
+                                            alt="Sophia Redmond" loading="lazy" width="60" height="60">
+                                    </div>
+                                    <div class=""><span class=""><i>By <b>Sophia Redmond</b></i>
+                                        </span></div>
+                                    &nbsp&nbsp
+                                    <div class="">
+                                        <span class="">
+                                            <i style="font-size: 5px;" class="fa-solid fa-circle"></i>
+                                        </span>
+                                    </div>
+                                    &nbsp&nbsp
+                                    <div><span><i>June 6, 2023</i>
+                                        </span></div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore...</span>
+
+                            </div>
+                            <div class="card-body mt-3">
+                                <button class="rounded rounded-4 px-4 py-2 btn btn-outline-primary">See more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-4 mx-auto mb-4">
+                <div class="d-flex justify-content-center align-items-center text-start ">
+                    <div class="card p-4"  style=" border-radius: 15px;">
+                        <img loading="lazy" width="386px" height="278px"
+                            src="https://demo.rivaxstudio.com/raveen/personal/wp-content/uploads/2023/06/bhavya-pareek-HVB-XhdWOWo-unsplash-550x400.jpg"
+                            class="card-img-top attachment-rivax-small size-rivax-small wp-post-image rounded-4 rounded"
+                            alt="" decoding="async"
+                            title="Taking Control Of Your Daily Life Is Easy When You Know How!">
+                        <div class="p-2">
+                            <div class="card-body">
+                                <a href="" class="text-decoration-none">
+                                    <h3 class="card-title">Taking Control Of Your Daily Life Is Easy When You Know How!
+                                    </h3>
+                                </a>
+                                <div class="d-flex align-items-center">
+                                    <div class="author-image">
+                                        <img decoding="async" class="avatar avatar-60 photo rounded-circle p-2"
+                                            src="https://demo.rivaxstudio.com/raveen/personal/wp-content/uploads/2023/09/User-min-150x150.jpg"
+                                            alt="Sophia Redmond" loading="lazy" width="60" height="60">
+                                    </div>
+                                    <div class=""><span class=""><i>By <b>Sophia Redmond</b></i>
+                                        </span></div>
+                                    &nbsp&nbsp
+                                    <div class="">
+                                        <span class="">
+                                            <i style="font-size: 5px;" class="fa-solid fa-circle"></i>
+                                        </span>
+                                    </div>
+                                    &nbsp&nbsp
+                                    <div><span><i>June 6, 2023</i>
+                                        </span></div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore...</span>
+
+                            </div>
+                            <div class="card-body mt-3">
+                                <button class="rounded rounded-4 px-4 py-2 btn btn-outline-primary">See more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mx-auto mb-4">
+                <div class="d-flex justify-content-center align-items-center text-start ">
+                    <div class="card p-4"  style=" border-radius: 15px;">
+                        <img loading="lazy" width="386px" height="278px"
+                            src="https://demo.rivaxstudio.com/raveen/personal/wp-content/uploads/2023/06/bhavya-pareek-HVB-XhdWOWo-unsplash-550x400.jpg"
+                            class="card-img-top attachment-rivax-small size-rivax-small wp-post-image rounded-4 rounded"
+                            alt="" decoding="async"
+                            title="Taking Control Of Your Daily Life Is Easy When You Know How!">
+                        <div class="p-2">
+                            <div class="card-body">
+                                <a href="" class="text-decoration-none">
+                                    <h3 class="card-title">Taking Control Of Your Daily Life Is Easy When You Know How!
+                                    </h3>
+                                </a>
+                                <div class="d-flex align-items-center">
+                                    <div class="author-image">
+                                        <img decoding="async" class="avatar avatar-60 photo rounded-circle p-2"
+                                            src="https://demo.rivaxstudio.com/raveen/personal/wp-content/uploads/2023/09/User-min-150x150.jpg"
+                                            alt="Sophia Redmond" loading="lazy" width="60" height="60">
+                                    </div>
+                                    <div class=""><span class=""><i>By <b>Sophia Redmond</b></i>
+                                        </span></div>
+                                    &nbsp&nbsp
+                                    <div class="">
+                                        <span class="">
+                                            <i style="font-size: 5px;" class="fa-solid fa-circle"></i>
+                                        </span>
+                                    </div>
+                                    &nbsp&nbsp
+                                    <div><span><i>June 6, 2023</i>
+                                        </span></div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore...</span>
+
+                            </div>
+                            <div class="card-body mt-3">
+                                <button class="rounded rounded-4 px-4 py-2 btn btn-outline-primary">See more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mx-auto mb-4">
+                <div class="d-flex justify-content-center align-items-center text-start ">
+                    <div class="card p-4"  style=" border-radius: 15px;">
+                        <img loading="lazy" width="386px" height="278px"
+                            src="https://demo.rivaxstudio.com/raveen/personal/wp-content/uploads/2023/06/bhavya-pareek-HVB-XhdWOWo-unsplash-550x400.jpg"
+                            class="card-img-top attachment-rivax-small size-rivax-small wp-post-image rounded-4 rounded"
+                            alt="" decoding="async"
+                            title="Taking Control Of Your Daily Life Is Easy When You Know How!">
+                        <div class="p-2">
+                            <div class="card-body">
+                                <a href="" class="text-decoration-none">
+                                    <h3 class="card-title">Taking Control Of Your Daily Life Is Easy When You Know How!
+                                    </h3>
+                                </a>
+                                <div class="d-flex align-items-center">
+                                    <div class="author-image">
+                                        <img decoding="async" class="avatar avatar-60 photo rounded-circle p-2"
+                                            src="https://demo.rivaxstudio.com/raveen/personal/wp-content/uploads/2023/09/User-min-150x150.jpg"
+                                            alt="Sophia Redmond" loading="lazy" width="60" height="60">
+                                    </div>
+                                    <div class=""><span class=""><i>By <b>Sophia Redmond</b></i>
+                                        </span></div>
+                                    &nbsp&nbsp
+                                    <div class="">
+                                        <span class="">
+                                            <i style="font-size: 5px;" class="fa-solid fa-circle"></i>
+                                        </span>
+                                    </div>
+                                    &nbsp&nbsp
+                                    <div><span><i>June 6, 2023</i>
+                                        </span></div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore...</span>
+
+                            </div>
+                            <div class="card-body mt-3">
+                                <button class="rounded rounded-4 px-4 py-2 btn btn-outline-primary">See more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
     <footer>
 
@@ -171,6 +459,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
         crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
