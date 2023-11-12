@@ -6,6 +6,14 @@
  
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS để thêm hiệu ứng gạch chân khi rê chuột vào */
+a.text-black:hover {
+ 
+}
 
 
 /* .navbar .dropdown:hover .dropdown-menu {
@@ -32,16 +40,83 @@
 }
 .card:hover {
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2); /* Thay đổi giá trị này để điều chỉnh box shadow theo mong muốn */
+ 
 }
 
-.card a.text-decoration-none:hover {
-  text-decoration: underline; /* Thêm đường gạch chân khi rê chuột vào thẻ <a> trong thẻ .card */
+.card-body .text-black:hover {
+  color: #c04c4cfc;
 }
-
 
 .card {
   border-radius: 10px; /* Điều chỉnh giá trị này theo độ cong mà bạn muốn */
 }
+
+.sub-background {
+  display: flex;
+  --gap: 10px 10px;
+  --background-transition: 0.3s;
+  --overlay-opacity: 1;
+  --border-radius: 15px 15px 15px 15px;
+  --padding-block-start: 100px;
+  --padding-block-end: 100px;
+  --padding-inline-start: 30px;
+  --padding-inline-end: 30px;
+  background-image: url(https://demo.rivaxstudio.com/raveen/personal/wp-content/uploads/2023/09/gwangan-bridge-sunrise-busan-south-korea-min-1600x700.jpg);
+  background-size: cover;
+  position: relative; /* Thêm này để tạo khung chứa pseudo-element */
+ border-radius: 15px;
+ text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.navbar-toggler {
+  position: fixed;
+  top: 90px;
+  left: 20px;
+  z-index: 1; /* Đảm bảo nút Toggle nổi trên tất cả các phần tử khác */
+}
+
+/* Điều chỉnh kích thước nút Toggle nếu cần */
+.navbar-toggler-icon {
+  font-size: 15px;
+}
+
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  background-color: #007BFF;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.wave {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background: linear-gradient(90deg, transparent 47%, #fffffffc 47%, #fffffffc 53%, transparent 0%);
+  background-size: 10% 100%;
+  animation: wave;
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+
 
 @media (max-width: 768px) {
   .logo-container {
